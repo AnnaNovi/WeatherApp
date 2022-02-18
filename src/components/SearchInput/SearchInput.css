@@ -1,0 +1,23 @@
+.SearchInput {
+  border: 1px solid #e7e7eb;
+  box-sizing: border-box;
+  color: #616475;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 14px 15px 15px 49px;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  margin-right: 12px;
+}
+.SearchInputWrapper {
+  position: relative;
+}
+.SearchInputWrapper::before {
+  content: url('./search-icon.svg');
+  position: absolute;
+  transform: translate(50%, 60%);
+}

@@ -1,0 +1,32 @@
+.WeatherContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.degres {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 169px;
+  color: #e7e7eb;
+  position: relative;
+}
+.degres span {
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 56px;
+  position: absolute;
+  top: 0;
+}
+.mainValue {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #a09fb1;
+}

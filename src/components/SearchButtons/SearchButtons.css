@@ -1,0 +1,36 @@
+.SearchButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.seachForPlaces {
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e7e7eb;
+  padding: 7px 15px;
+  border: 3px solid #6e707a;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.seachForPlaces:hover {
+  background: none;
+  transition: 0.8s;
+}
+.openMap {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.openMap::before {
+  content: url('./gps-icon.svg');
+  position: absolute;
+  transform: translate(-50%, -45%);
+}

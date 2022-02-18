@@ -1,0 +1,22 @@
+.circleDelimiter::before {
+  content: '';
+  background: #88869d;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circleDelimiter {
+  position: relative;
+  margin: 0 18px;
+}
+.DateBar > span {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #88869d;
+}

@@ -1,0 +1,17 @@
+.Aside {
+  background: #1e213a;
+  width: 30%;
+  max-width: 459px;
+  padding: 82px 47px;
+  position: relative;
+}
+.closeBtn {
+  cursor: pointer;
+}
+.closeBtn::before {
+  content: url('./close-icon.svg');
+  position: absolute;
+  top: 20px;
+  right: 47px;
+  transform: scale(1.5);
+}
