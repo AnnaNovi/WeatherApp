@@ -4,3 +4,12 @@
   width: 100%;
   box-sizing: border-box;
 }
+.blockName {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e7e7eb;
+  margin: 72px 0 8px 0;
+}

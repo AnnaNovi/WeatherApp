@@ -1,0 +1,42 @@
+.UnitsBar {
+  position: absolute;
+  top: 42px;
+  right: 125px;
+  display: flex;
+}
+.unitItem {
+  margin-left: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #585676;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #e7e7eb;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.unitItem:not(.unitItemActive):hover {
+  transition: 1s;
+  background: transparent;
+  /* background: rgba(#585676, 0.5); */
+}
+.unitItem.unitItemActive {
+  background: #e7e7eb;
+  color: #110e3c;
+}
+.metric::before {
+  content: '℃';
+  position: absolute;
+  transform: translate(-50%, 45%);
+}
+.imperial::before {
+  content: '℉';
+  position: absolute;
+  transform: translate(-50%, 45%);
+}

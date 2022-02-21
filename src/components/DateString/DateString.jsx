@@ -52,7 +52,7 @@ function DateString({month, date, day}) {
     }
   }
   return ( 
-    <span>{`${getDay()}, ${date} ${getMonth()}`}</span>
+    <span style={{whiteSpace: 'nowrap'}}>{`${getDay()}, ${date} ${getMonth()}`}</span>
   );
 }
 

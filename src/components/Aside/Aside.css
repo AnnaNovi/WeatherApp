@@ -3,6 +3,9 @@
   width: 460px;
   padding: 82px 47px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .closeBtn {
   cursor: pointer;

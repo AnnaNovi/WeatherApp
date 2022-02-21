@@ -1,10 +1,10 @@
 export const weatherWeekReducer = (state = null, action) => {
   switch (action.type) {
-    case 'setWeather':
+    case 'setWeatherWeek':
       return {...state, ...action.payload}
     default:
       return state
   }
 }
 
-export const getWeatherWeekAction = (payload) => ({type: 'setWeather', payload})
+export const getWeatherWeekAction = (payload) => ({type: 'setWeatherWeek', payload})
