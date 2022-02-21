@@ -1,16 +1,21 @@
 import React from 'react';
 import DateBar from '../DateBar/DateBar';
-import './WeatherContent.css'
+import './WeatherContent.css';
+import { useSelector } from 'react-redux';
 
-function WeatherContent(weather) {
-  console.log()
-  let degres = (weather?.main) ? weather.main.feels_like : '15';
-  let mainValue = 'Snow';
+function WeatherContent() {
+
+  const currentWeather = useSelector(state => state.weather);
+
+  const degree = Math.round(currentWeather.main?.feels_like);
+  const mainValue = currentWeather.weather[0].main;
+  const location = currentWeather.name;
   return ( 
     <div className='WeatherContent'>
-      <div className='degres'>{degres}<span>°С</span></div>
+      <div className='degres'>{degree}<span>°С</span></div>
       <div className='mainValue'>{mainValue}</div>
       <DateBar />
+      <div className='location'>{location}</div>
     </div>
   );
 }

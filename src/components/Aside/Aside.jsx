@@ -6,6 +6,7 @@ import CityList from '../CityList/CityList';
 import './Aside.css';
 
 function Aside() {
+
   let content;
   const [asideMode, setAsideMode] = useState('defaultMode');
 
@@ -16,7 +17,7 @@ function Aside() {
     </>
   } else {
     content = <>
-      <SearchBar searchBtn={setAsideMode}/>
+      <SearchBar setAsideMode={setAsideMode} />
       <CityList />
       <span onClick={() => setAsideMode('defaultMode')} className='closeBtn'></span>
     </>

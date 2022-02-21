@@ -1,0 +1,63 @@
+.Hightlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.HightlightsItem {
+  background: #1e213a;
+  width: calc((100% - 48px) / 2);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 24px 0;
+  color: #e7e7eb;
+}
+.itemTitle {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.itemInfo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.itemInfo span {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+.windRangeValue {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a09fb1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.windRange {
+  background: #e7e7eb;
+  border-radius: 80px;
+  width: 100%;
+  height: 8px;
+  position: relative;
+}
+.windRangePercent {
+  background: #ffec65;
+  border-radius: 80px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
