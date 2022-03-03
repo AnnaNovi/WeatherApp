@@ -1,0 +1,11 @@
+.LocationItem {
+  color: #E7E7EB;
+  padding: 22px 12px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.LocationItem:hover {
+  transition: 0.5s;
+  border: 1px solid #616475;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-function WeatherPredictImage({icon, description, style}) {
+function WeatherPredictImage({icon, description}) {
   return (
-    <img style={style} src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={description}/>
+    <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={description}/>
   );
 }
 
